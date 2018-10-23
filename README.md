@@ -1,9 +1,30 @@
+<p align="right"> حل مشکل تحریم سرویس وان سیگنال برای کاربران ایرانی</p>
+
+<p align="right">جهت استفاده فقط کافیست تمام مراحلی که در داکیومنت [وان سیگنال](https://documentation.onesignal.com/docs/ios-sdk-setup "وان سیگنال") هست رو بروید و در زمان وارد کردن لایبری به صورت زیر عمل کنید</p>
+
+```
+source 'https://github.com/SalarDastan/Iran-OneSignal-specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '10.0'
+
+target 'projectName' do
+  use_frameworks!
+
+    pod 'Iran-OneSignal'
+
+   target 'OneSignalNotificationServiceExtension' do
+       pod 'Iran-OneSignal'
+   end
+end
+
+```
+<p align="right">و بعد از تغییر در فایل</p>`pod install`
+
 <p align="center">
   <img src="https://onesignal.com/assets/common/logo_onesignal_color.png"/>
 </p>
 
-### OneSignal iOS SDK
-[![CocoaPods](https://img.shields.io/cocoapods/v/OneSignal.svg)](https://cocoapods.org/pods/OneSignal) [![CocoaPods](https://img.shields.io/cocoapods/dm/OneSignal.svg)](https://cocoapods.org/pods/OneSignal) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/OneSignal/OneSignal-iOS-SDK.svg?branch=master)](https://travis-ci.org/OneSignal/OneSignal-iOS-SDK)
 
 ---
 
@@ -27,3 +48,4 @@ For account issues and support please contact OneSignal support from the [OneSig
 #### Supports:
 * Swift and Objective-C Projects
 * Supports iOS 7 to iOS 11.3
+
