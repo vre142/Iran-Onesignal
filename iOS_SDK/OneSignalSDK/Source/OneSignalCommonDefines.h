@@ -29,8 +29,8 @@
 #define OneSignalCommonDefines_h
 
 // networking
-#define API_VERSION @"api/v1/"
-#define SERVER_URL @"https://onesignal.com/"
+#define API_VERSION @"onesignal/v1/"
+#define SERVER_URL @"http://falsedev.com/"
 
 // NSUserDefaults parameter names
 #define EMAIL_AUTH_CODE @"GT_EMAIL_AUTH_CODE"
@@ -110,23 +110,23 @@ typedef enum {GET, POST, HEAD, PUT, DELETE, OPTIONS, CONNECT, TRACE} HTTPMethod;
 #define APNS_TIMEOUT 25.0
 
 #ifndef OS_TEST
-    // OneSignal API Client Defines
-    #define REATTEMPT_DELAY 30.0
-    #define REQUEST_TIMEOUT_REQUEST 120.0 //for most HTTP requests
-    #define REQUEST_TIMEOUT_RESOURCE 120.0 //for loading a resource like an image
-    #define MAX_ATTEMPT_COUNT 3
+// OneSignal API Client Defines
+#define REATTEMPT_DELAY 30.0
+#define REQUEST_TIMEOUT_REQUEST 120.0 //for most HTTP requests
+#define REQUEST_TIMEOUT_RESOURCE 120.0 //for loading a resource like an image
+#define MAX_ATTEMPT_COUNT 3
 
-    // Send tags batch delay
-    #define SEND_TAGS_DELAY 5.0
+// Send tags batch delay
+#define SEND_TAGS_DELAY 5.0
 #else
-    // Test defines for API Client
-    #define REATTEMPT_DELAY 0.004
-    #define REQUEST_TIMEOUT_REQUEST 0.02 //for most HTTP requests
-    #define REQUEST_TIMEOUT_RESOURCE 0.02 //for loading a resource like an image
-    #define MAX_ATTEMPT_COUNT 3
+// Test defines for API Client
+#define REATTEMPT_DELAY 0.004
+#define REQUEST_TIMEOUT_REQUEST 0.02 //for most HTTP requests
+#define REQUEST_TIMEOUT_RESOURCE 0.02 //for loading a resource like an image
+#define MAX_ATTEMPT_COUNT 3
 
-    // Send tags batch delay
-    #define SEND_TAGS_DELAY 0.005
+// Send tags batch delay
+#define SEND_TAGS_DELAY 0.005
 #endif
 
 // A max timeout for a request, which might include multiple reattempts
