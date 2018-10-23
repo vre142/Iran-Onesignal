@@ -1,6 +1,6 @@
 <p align="right"> حل مشکل تحریم سرویس وان سیگنال برای کاربران ایرانی</p>
 
-<p align="right">جهت استفاده فقط کافیست تمام مراحلی که در داکیومنت [وان سیگنال](https://documentation.onesignal.com/docs/ios-sdk-setup "وان سیگنال") هست رو بروید و در زمان وارد کردن لایبری به صورت زیر عمل کنید</p>
+<p align="right">جهت استفاده فقط کافیست تمام مراحلی که در داکیومنت هست رو بروید و در زمان وارد کردن لایبری به صورت زیر عمل کنید و فقط به جای لایبری وانسیگنال لایبری ایران-وانسیگنال رو استفاده کنید و تمام امکانات این سرویس بدون هیچ اختلالی قابل استفاده هست و با زمان تحریم نشده هیچ تفاوتی نخواهد کرد</p>
 
 ```
 source 'https://github.com/SalarDastan/Iran-OneSignal-specs.git'
@@ -20,6 +20,13 @@ end
 
 ```
 <p align="right">و بعد از تغییر در فایل</p>`pod install`
+
+
+
+
+
+
+
 
 <p align="center">
   <img src="https://onesignal.com/assets/common/logo_onesignal_color.png"/>
