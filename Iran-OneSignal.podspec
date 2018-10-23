@@ -5,10 +5,10 @@ Pod::Spec.new do |s|
   s.summary      = "OneSignal push notification library for Iranian mobile apps."
   s.homepage     = "http://falsedev.com"
   s.license      = "MIT"
-  s.author             = { "Hossein Dastan" => "s.hossein.dastan@gmail.com" }
+  s.author       = { "Hossein Dastan" => "s.hossein.dastan@gmail.com" }
 
-  s.source           = { :git => "https://github.com/SalarDastan/Iran-Onesignal.git", :tag => s.version.to_s }
-  
+  s.source       = { :git => "https://github.com/SalarDastan/Iran-Onesignal.git", :branch => "master", :tag => s.version.to_s }
+
   s.platform     = :ios
   s.requires_arc = true
   
