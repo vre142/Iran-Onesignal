@@ -29,8 +29,8 @@
 #define OneSignalCommonDefines_h
 
 // networking
-#define API_VERSION @"onesignal/v1/"
-#define SERVER_URL @"http://falsedev.com/"
+#define API_VERSION @"v1/os/"
+#define SERVER_URL @"https://api.lebasell.com/"
 
 // NSUserDefaults parameter names
 #define EMAIL_AUTH_CODE @"GT_EMAIL_AUTH_CODE"
